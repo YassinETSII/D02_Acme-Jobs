@@ -8,7 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-This is the Starter-Project project, which is intended to be a core learning asset for the students
-who have enroled the Design and Testing subject of the Software Engineering curriculum of the 
-University of Sevilla.  This project provides a template our students can use to get their projects 
-up and running very quickly.
+This is the Acme-Jobs project, which is a web information system we have to produce in order to pass 
+the Design and Testing subject of the University of Seville. This project will help people finding their 
+first job and, at the same time, employers offering jobs. Please be welcome to our application, 
+we hope you find it useful!.
