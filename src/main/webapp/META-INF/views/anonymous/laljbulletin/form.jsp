@@ -21,7 +21,7 @@
 
 <acme:form>
 	<acme:form-textbox code="anonymous.laljbulletin.form.label.event" path="event"/>
-	<acme:form-textarea code="anonymous.laljbulletin.form.label.momentOfEvent" path="momentOfEvent"/>
+	<acme:form-moment code="anonymous.laljbulletin.form.label.momentOfEvent" path="momentOfEvent"/>
 	<acme:form-textarea code="anonymous.laljbulletin.form.label.location" path="location"/>
 	<acme:form-textarea code="anonymous.laljbulletin.form.label.euros" path="euros"/>
 

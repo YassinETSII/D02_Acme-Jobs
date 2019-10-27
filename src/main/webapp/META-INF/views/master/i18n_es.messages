@@ -27,6 +27,11 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.announcement.list = Listar anuncios
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
