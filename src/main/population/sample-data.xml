@@ -109,7 +109,7 @@
 	
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Graphic designer"/>
-		<property name="moment" value="2019/09/12 19:30"/>
+		<property name="moment" value="2019/10/21 19:30"/>
 		<property name="moreInfo" value="https://www.infojobs.net/"/>
 		<property name="text" value="We need a graphic designer for position as responsible for the visual image of the company."/>
 	</bean>
@@ -126,6 +126,20 @@
 		<property name="moment" value="1997/04/20 18:59"/>
 		<property name="moreInfo" value="https://www.infojobs.net/"/>
 		<property name="text" value="We need a Human Resources Technician with at least 2 years of experience for our team."/>
+	</bean>
+	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Business Intelligence analyst"/>
+		<property name="moment" value="2019/10/27 15:09"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a business intelligence analyst with at least 3 years of experience."/>
+	</bean>
+	
+	<bean id="announcement05" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Bartender"/>
+		<property name="moment" value="2019/09/25 18:52"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a bartender for our new Bar, the Bar Amaro."/>
 	</bean>
 	
 </beans>
