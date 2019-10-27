@@ -43,6 +43,7 @@ master.menu.anonymous.laljbulletin.list = List Lalj's Bulletin
 master.menu.anonymous.laljbulletin.create = Create Lalj's Bulletin
 master.menu.anonymous.rodriguezbulletin.list = List Rodriguez's Bulletin
 master.menu.anonymous.rodriguezbulletin.create = Create Rodriguez's Bulletin
+master.menu.anonymous.announcement.list = List announcements
 
 # master.menu.administrator ###################################################
 
