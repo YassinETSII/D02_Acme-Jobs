@@ -1,15 +1,18 @@
 
-package acme.entities.shouts;
+package acme.entities.offers;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Shout extends DomainEntity {
+public class Offer extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -26,13 +29,33 @@ public class Shout extends DomainEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	private String				author;
-
-	@NotBlank
-	private String				text;
+	private String				title;
 
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				moment;
+
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				deadline;
+
+	@NotBlank
+	private String				text;
+
+	@NotNull
+	private Money				minReward;
+
+	@NotNull
+	private Money				maxReward;
+
+	@NotBlank
+	@Pattern(regexp = "^[O][a-zA-Z]{4}[-]\\d{5}$")
+	@Column(unique = true)
+	private String				ticker;
+
+	// Derived Attributes -------------------------------------------------------
+
+	// Relationships ------------------------------------------------------------
+
 }

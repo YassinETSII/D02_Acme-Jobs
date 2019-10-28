@@ -53,7 +53,7 @@
 
 	<bean id="laljbulletin01" class="acme.entities.bulletins.LaljBulletin">
 		<property name="event" value="Guided visit to Alcazar"/>
-		<property name="momentOfEvent" value="2019/11/07 12:30"/>
+		<property name="momentOfEvent" value="2020/11/07 12:30"/>
 		<property name="location" value="Real Alcazar"/>
 		<property name="euros" value="3"/>
 	</bean>
@@ -79,6 +79,8 @@
 		<property name="euros" value="60"/>
 	</bean>
 	
+	<!--  RodriguezBulletin -->
+	
 	<bean id="rodriguezbulletin01" class="acme.entities.bulletins.RodriguezBulletin">
 		<property name="informer" value="Mike Oldfield"/>
 		<property name="type" value="XSS"/>
@@ -102,4 +104,103 @@
 		<property name="type" value="XSS"/>
 		<property name="bulletinMoment" value="2015/04/17 18:00"/>
 	</bean>
+	
+	<!--  Announcements -->
+	
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Graphic designer"/>
+		<property name="moment" value="2019/10/21 19:30"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a graphic designer for position as responsible for the visual image of the company."/>
+	</bean>
+
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Truck tire repairer"/>
+		<property name="moment" value="2019/06/15 11:49"/>
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="Stable position is offered. Hours Monday through Friday from 08:30 a.m. to 1:00 p.m. and from 4:00 p.m. to 7:00 p.m."/>
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="HR Technician"/>
+		<property name="moment" value="1997/04/20 18:59"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a Human Resources Technician with at least 2 years of experience for our team."/>
+	</bean>
+	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Business Intelligence analyst"/>
+		<property name="moment" value="2019/10/27 15:09"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a business intelligence analyst with at least 3 years of experience."/>
+	</bean>
+	
+	<bean id="announcement05" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Bartender"/>
+		<property name="moment" value="2019/09/25 18:52"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a bartender for our new Bar, the Bar Amaro."/>
+	</bean>
+	
+	<!--  Requests -->
+	
+	<bean id="request01" class="acme.entities.requests.Request">
+		<property name="title" value="Request for the vacant of java programmer"/>
+		<property name="moment" value="2019/09/25 18:52"/>
+		<property name="deadline" value="2020/10/25 22:00"/>
+		<property name="text" value="Hi, this is my request for the job."/>
+		<property name="reward" value="2400.0 EUR"/>
+		<property name="ticker" value="RXJAB-45312"/>		
+	</bean>
+	
+	<bean id="request02" class="acme.entities.requests.Request">
+		<property name="title" value="Request for the vacant of python analyst"/>
+		<property name="moment" value="2019/03/02 13:15"/>
+		<property name="deadline" value="2020/01/12 12:00"/>
+		<property name="text" value="Hi there, this is my request for the job."/>
+		<property name="reward" value="2000.0 EUR"/>
+		<property name="ticker" value="RfJAa-45313"/>		
+	</bean>	
+	
+	<bean id="request03" class="acme.entities.requests.Request">
+		<property name="title" value="Request for the vacant of business intelligence analyst"/>
+		<property name="moment" value="2019/09/25 18:52"/>
+		<property name="deadline" value="2020/10/25 22:00"/>
+		<property name="text" value="Hi, this is my request."/>
+		<property name="reward" value="1000.0 EUR"/>
+		<property name="ticker" value="RCgAn-65572"/>		
+	</bean>	
+	
+	<!--  Offers -->
+	
+	<bean id="offer01" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer for the vacant of java programmer"/>
+		<property name="moment" value="2019/09/25 18:52"/>
+		<property name="deadline" value="2020/10/25 22:00"/>
+		<property name="text" value="This is the offer for the job."/>
+		<property name="minReward" value="900.0 EUR"/>
+		<property name="maxReward" value="1600.0 EUR"/>
+		<property name="ticker" value="OXJAB-45312"/>		
+	</bean>
+	
+	<bean id="offer02" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer for the vacant of python analyst"/>
+		<property name="moment" value="2019/03/02 13:15"/>
+		<property name="deadline" value="2020/01/12 12:00"/>
+		<property name="text" value="This is the offer for the job."/>
+		<property name="minReward" value="1400.0 EUR"/>
+		<property name="maxReward" value="1800.0 EUR"/>
+		<property name="ticker" value="OfJAa-45313"/>		
+	</bean>	
+	
+	<bean id="offer03" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer for the vacant of business intelligence analyst"/>
+		<property name="moment" value="2019/09/25 18:52"/>
+		<property name="deadline" value="2020/10/25 22:00"/>
+		<property name="text" value="This is the offer for the job."/>
+		<property name="minReward" value="500.0 EUR"/>
+		<property name="maxReward" value="1500.0 EUR"/>
+		<property name="ticker" value="OCgAn-65572"/>		
+	</bean>	
+	
 </beans>

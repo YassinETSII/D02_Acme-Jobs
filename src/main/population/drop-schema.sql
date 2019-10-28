@@ -21,6 +21,8 @@
 
     drop table if exists `administrator`;
 
+    drop table if exists `announcement`;
+
     drop table if exists `anonymous`;
 
     drop table if exists `authenticated`;
@@ -29,7 +31,11 @@
 
     drop table if exists `lalj_bulletin`;
 
+    drop table if exists `offer`;
+
     drop table if exists `provider`;
+
+    drop table if exists `request`;
 
     drop table if exists `rodriguez_bulletin`;
 

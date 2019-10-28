@@ -27,6 +27,13 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.announcement.list = Listar anuncios
+master.menu.authenticated.request.list = Listar solicitudes
+master.menu.authenticated.offer.list = Listar ofertas
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
@@ -38,6 +45,7 @@ master.menu.anonymous.laljbulletin.list = Listar Boletin de Lalj
 master.menu.anonymous.laljbulletin.create = Crear Boletin de Lalj
 master.menu.anonymous.rodriguezbulletin.list = Listar Boletin de Rodriguez
 master.menu.anonymous.rodriguezbulletin.create = Crear Boletin de Rodriguez
+master.menu.anonymous.announcement.list = Listar anuncios
 
 # master.menu.administrator ###################################################
 

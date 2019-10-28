@@ -1,5 +1,5 @@
 
-package acme.entities.shouts;
+package acme.entities.announcements;
 
 import java.util.Date;
 
@@ -10,6 +10,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
+import org.hibernate.validator.constraints.URL;
+
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,7 +19,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Shout extends DomainEntity {
+public class Announcement extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -26,13 +28,21 @@ public class Shout extends DomainEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	private String				author;
-
-	@NotBlank
-	private String				text;
+	private String				title;
 
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				moment;
+
+	@URL
+	private String				moreInfo;
+
+	@NotBlank
+	private String				text;
+
+	// Derived Attributes -------------------------------------------------------
+
+	// Relationships ------------------------------------------------------------
+
 }
