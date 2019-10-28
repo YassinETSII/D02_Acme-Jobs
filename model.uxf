@@ -367,17 +367,36 @@ Shout
     <coordinates>
       <x>873</x>
       <y>729</y>
-      <w>378</w>
+      <w>396</w>
       <h>126</h>
     </coordinates>
     <panel_attributes>Request
 --
 + title: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past}
-+ deadline: Date {Temporal(DATE)}
++ deadline: Date {Temporal(TIMESTAMP)}
 + text: String {NotBlank}
-+ reward: String {NotBlank}
-+ ticker: String {NotBlank}{Unique}{Pattern("^[R][A-Z]{4}[-]\d{5}$")}</panel_attributes>
++ reward: Money {NotNull}
++ ticker: String {NotBlank}{Unique}{Pattern("^[R][a-zA-Z]{4}[-]\\d{5}$")}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>873</x>
+      <y>864</y>
+      <w>396</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP)}
++ text: String {NotBlank}
++ minReward: Money {NotNull}
++ maxReward: Money {NotNull}
++ ticker: String {NotBlank}{Unique}{Pattern("^[O][a-zA-Z]{4}[-]\\d{5}$")}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

@@ -143,6 +143,7 @@
 	</bean>
 	
 	<!--  Requests -->
+	
 	<bean id="request01" class="acme.entities.requests.Request">
 		<property name="title" value="Request for the vacant of java programmer"/>
 		<property name="moment" value="2019/09/25 18:52"/>
@@ -168,6 +169,38 @@
 		<property name="text" value="Hi, this is my request."/>
 		<property name="reward" value="1000.0 EUR"/>
 		<property name="ticker" value="RCgAn-65572"/>		
+	</bean>	
+	
+	<!--  Offers -->
+	
+	<bean id="offer01" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer for the vacant of java programmer"/>
+		<property name="moment" value="2019/09/25 18:52"/>
+		<property name="deadline" value="2020/10/25 22:00"/>
+		<property name="text" value="This is the offer for the job."/>
+		<property name="minReward" value="900.0 EUR"/>
+		<property name="maxReward" value="1600.0 EUR"/>
+		<property name="ticker" value="OXJAB-45312"/>		
+	</bean>
+	
+	<bean id="offer02" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer for the vacant of python analyst"/>
+		<property name="moment" value="2019/03/02 13:15"/>
+		<property name="deadline" value="2020/01/12 12:00"/>
+		<property name="text" value="This is the offer for the job."/>
+		<property name="minReward" value="1400.0 EUR"/>
+		<property name="maxReward" value="1800.0 EUR"/>
+		<property name="ticker" value="OfJAa-45313"/>		
+	</bean>	
+	
+	<bean id="offer03" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer for the vacant of business intelligence analyst"/>
+		<property name="moment" value="2019/09/25 18:52"/>
+		<property name="deadline" value="2020/10/25 22:00"/>
+		<property name="text" value="This is the offer for the job."/>
+		<property name="minReward" value="500.0 EUR"/>
+		<property name="maxReward" value="1500.0 EUR"/>
+		<property name="ticker" value="OCgAn-65572"/>		
 	</bean>	
 	
 </beans>
