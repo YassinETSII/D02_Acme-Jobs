@@ -358,8 +358,26 @@ Shout
 --
 + title: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past}
-+ momentInfo: String {URL}
++ moreInfo: String {URL}
 + text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>873</x>
+      <y>729</y>
+      <w>378</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Request
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(DATE)}
++ text: String {NotBlank}
++ reward: String {NotBlank}
++ ticker: String {NotBlank}{Unique}{Pattern("^[R][A-Z]{4}[-]\d{5}$")}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

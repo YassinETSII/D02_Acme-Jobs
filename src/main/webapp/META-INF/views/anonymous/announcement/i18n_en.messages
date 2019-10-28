@@ -10,11 +10,11 @@
 
 ########################################### Feature: anonymous shows an announcement.
 anonymous.announcement.form.label.title = Title:
-anonymous.announcement.form.label.moment = Moment:
+anonymous.announcement.form.label.moment = Moment of creation:
 anonymous.announcement.form.label.moreInfo = More info:
 anonymous.announcement.form.label.text = Text:
 anonymous.announcement.form.button.return = Return
 
 ########################################### Feature: anonymous lists announcements.
-anonymous.announcement.list.label.moment = Moment
+anonymous.announcement.list.label.moment = Moment of creation
 anonymous.announcement.list.label.title = Title

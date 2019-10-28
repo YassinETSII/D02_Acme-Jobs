@@ -31,6 +31,7 @@ master.menu.sign-out = Salir
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.announcement.list = Listar anuncios
+master.menu.authenticated.request.list = Listar solicitudes
 
 # master.menu.anonymous #######################################################
 

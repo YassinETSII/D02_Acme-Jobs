@@ -10,11 +10,11 @@
 
 ########################################### Feature: anonimo muestra un anuncio.
 anonymous.announcement.form.label.title = Título:
-anonymous.announcement.form.label.moment = Momento:
+anonymous.announcement.form.label.moment = Momento de creación:
 anonymous.announcement.form.label.moreInfo = Más info:
 anonymous.announcement.form.label.text = Texto:
 anonymous.announcement.form.button.return = Volver
 
 ########################################### Feature: anonimo lista anuncios.
-anonymous.announcement.list.label.moment = Momento
+anonymous.announcement.list.label.moment = Momento de creación
 anonymous.announcement.list.label.title = Título
