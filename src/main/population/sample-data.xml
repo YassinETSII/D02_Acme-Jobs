@@ -203,4 +203,42 @@
 		<property name="ticker" value="OCgAn-65572"/>		
 	</bean>	
 	
+	<!-- Company records -->
+	
+	<bean id="companyRecord01" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="company" value="Apricot, Inc."/>
+		<property name="sector" value="Audit"/>
+		<property name="CEO" value="José García"/>
+		<property name="description" value="Record in audit"/>
+		<property name="web" value="http://www.Apricot.com"/>
+		<property name="phone" value="+123 (23) 637238"/>
+		<property name="email" value="apricot@mail.com"/>
+		<property name="incorporated" value="true"/>
+		<property name="stars" value="4"/>		
+	</bean>
+	
+	<bean id="companyRecord02" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="company" value="Olive, LLC"/>
+		<property name="sector" value="Computer Fixing"/>
+		<property name="CEO" value="Alexander Guy"/>
+		<property name="description" value="Record in comp fix"/>
+		<property name="web" value="http://www.Olive.com"/>
+		<property name="phone" value="+23 (222) 1827574"/>
+		<property name="email" value="olive@mail.com"/>
+		<property name="incorporated" value="false"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="companyRecord03" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="company" value="Softsci, Inc."/>
+		<property name="sector" value="Web"/>
+		<property name="CEO" value="Arnold González"/>
+		<property name="description" value="Record in web"/>
+		<property name="web" value="http://www.Softsci.com"/>
+		<property name="phone" value="+9 (1234) 1234962549"/>
+		<property name="email" value="softsci@mail.com"/>
+		<property name="incorporated" value="true"/>
+		<property name="stars" value="5"/>		
+	</bean>
+	
 </beans>

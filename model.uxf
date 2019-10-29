@@ -399,4 +399,53 @@ Shout
 + ticker: String {NotBlank}{Unique}{Pattern("^[O][a-zA-Z]{4}[-]\\d{5}$")}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>405</x>
+      <y>630</y>
+      <w>459</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>companyRecord
+--
++ companyName: String {NotBlank}
++ sector: String {NotBlank}
++ CEO: String {NotBlank}
++ description: String {NotBlank}
++ web: String {URL}
++ phone: String {NotBlank}{Pattern("^[+][0-9]{1,3}[ ][(][0-9]{1,4}[)][ ][0-9]{6,10}$")}
++ email: String {NotBlank, Email}
++ incorporated: Boolean
++ stars: Integer {Min(0),Max(5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>522</x>
+      <y>522</y>
+      <w>243</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>An incorporated company typically adds
+the "Inc." suffix to ther name, e.g.,
+"Acme, Inc.", whereas non-incorporated
+companies typically add the "LLC" suffix
+to their name, e.g., "Mi-kasa, LLC")
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>594</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=..
+</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
 </diagram>
