@@ -27,6 +27,8 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `company_record`;
+
     drop table if exists `consumer`;
 
     drop table if exists `lalj_bulletin`;

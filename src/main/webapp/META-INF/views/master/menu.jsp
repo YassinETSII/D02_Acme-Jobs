@@ -32,6 +32,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.rodriguezbulletin.create" action="/anonymous/rodriguez-bulletin/create"/>	
 			<acme:menu-separator/>			
 			<acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list"/>	
+			<acme:menu-separator/>			
+			<acme:menu-suboption code="master.menu.anonymous.companyRecord.list" action="/anonymous/company-record/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
