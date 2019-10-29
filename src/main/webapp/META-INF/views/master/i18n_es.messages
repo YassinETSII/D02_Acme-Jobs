@@ -39,6 +39,11 @@ master.menu.anonymous.laljbulletin.create = Crear Boletin de Lalj
 master.menu.anonymous.rodriguezbulletin.list = Listar Boletin de Rodriguez
 master.menu.anonymous.rodriguezbulletin.create = Crear Boletin de Rodriguez
 
+# master.menu.authenticated ##################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.announcement.list = Lista de anuncios
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
