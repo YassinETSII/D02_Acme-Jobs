@@ -31,6 +31,8 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `investor_record`;
+
     drop table if exists `lalj_bulletin`;
 
     drop table if exists `offer`;
