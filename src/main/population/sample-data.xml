@@ -241,4 +241,27 @@
 		<property name="stars" value="5"/>		
 	</bean>
 	
+	<!-- Investor records -->
+	
+	<bean id="investorRecord01" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investor" value="Paco Fernández"/>
+		<property name="sector" value="Web"/>
+		<property name="statement" value="Statement for web record"/>
+		<property name="stars" value="5"/>		
+	</bean>
+	
+	<bean id="investorRecord02" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investor" value="Joseph Joestar"/>
+		<property name="sector" value="Audit"/>
+		<property name="statement" value="Statement for audit record"/>
+		<property name="stars" value="4"/>		
+	</bean>
+	
+	<bean id="investorRecord03" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investor" value="Robert Speedwagon"/>
+		<property name="sector" value="Apps"/>
+		<property name="statement" value="Statement for apps record"/>
+		<property name="stars" value="5"/>		
+	</bean>
+	
 </beans>
