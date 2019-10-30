@@ -33,6 +33,7 @@ master.menu.authenticated = Autenticado
 master.menu.authenticated.announcement.list = Listar anuncios
 master.menu.authenticated.request.list = Listar solicitudes
 master.menu.authenticated.offer.list = Listar ofertas
+master.menu.authenticated.challenge.list = Listar retos
 
 # master.menu.anonymous #######################################################
 

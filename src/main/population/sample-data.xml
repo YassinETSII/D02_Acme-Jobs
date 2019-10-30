@@ -264,4 +264,43 @@
 		<property name="stars" value="5"/>		
 	</bean>
 	
+	<!-- Challenges -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Capture the flag"/>
+		<property name="deadline" value="2020/06/20 12:00"/>
+		<property name="description" value="Capture the Flag (CTF) is a special kind of information security competitions."/>
+		<property name="goldLevelGoal" value="Capture the flag in 10 minutes"/>
+		<property name="silverLevelGoal" value="Capture the flag in 15 minutes"/>
+		<property name="bronzeLevelGoal" value="Capture the flag in 30 minutes"/>
+		<property name="goldLevelReward" value="500.0 EUR"/>
+		<property name="silverLevelReward" value="250.0 EUR"/>
+		<property name="bronzeLevelReward" value="100.0 EUR"/>		
+		
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Big data analytics"/>
+		<property name="deadline" value="2020/06/11 22:30"/>
+		<property name="description" value="To provide the best value to the organization."/>
+		<property name="goldLevelGoal" value="Provide the best value, detect issues and improve the system"/>
+		<property name="silverLevelGoal" value="Provide the best value and detect issues"/>
+		<property name="bronzeLevelGoal" value="Provide the best value"/>
+		<property name="goldLevelReward" value="1500.0 EUR"/>
+		<property name="silverLevelReward" value="1250.0 EUR"/>
+		<property name="bronzeLevelReward" value="600.0 EUR"/>						
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Automatic translation with machine learning"/>
+		<property name="deadline" value="2020/05/21 11:45"/>
+		<property name="description" value="To produce a efficient machine learning translator."/>
+		<property name="goldLevelGoal" value="Produce a machine learning translator with 90% of accuracy"/>
+		<property name="silverLevelGoal" value="Produce a machine learning translator with 85% of accuracy"/>
+		<property name="bronzeLevelGoal" value="Produce a machine learning translator with 70% of accuracy"/>
+		<property name="goldLevelReward" value="3000.0 EUR"/>
+		<property name="silverLevelReward" value="2550.0 EUR"/>
+		<property name="bronzeLevelReward" value="300.0 EUR"/>					
+	</bean>
+	
 </beans>

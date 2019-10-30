@@ -1,0 +1,26 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+########################################### Feature: autenticado muestra un reto.
+authenticated.challenge.form.label.title = Título:
+authenticated.challenge.form.label.deadline = Fecha de vencimiento:
+authenticated.challenge.form.label.description = Descripción:
+authenticated.challenge.form.label.goldLevelGoal = Objetivo de nivel oro:
+authenticated.challenge.form.label.goldLevelReward: Recompensa de nivel oro:
+authenticated.challenge.form.label.silverLevelGoal: Objetivo de nivel plata:
+authenticated.challenge.form.label.silverLevelReward: Recompensa de nivel plata:
+authenticated.challenge.form.label.bronzeLevelGoal: Objetivo de nivel bronce:
+authenticated.challenge.form.label.bronzeLevelReward: Recompensa de nivel bronce:
+
+authenticated.challenge.form.button.return = Volver
+
+########################################### Feature: autenticado lista retos.
+authenticated.challenge.list.label.deadline = Fecha de vencimiento
+authenticated.challenge.list.label.title = Título
