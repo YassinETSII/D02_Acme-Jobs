@@ -16,13 +16,12 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
-	<acme:form-textbox code="authenticated.offer.form.label.title" path="title"/>
-	<acme:form-moment code="authenticated.offer.form.label.moment" path="moment"/>
-	<acme:form-moment code="authenticated.offer.form.label.deadline" path="deadline"/>
-	<acme:form-textarea code="authenticated.offer.form.label.text" path="text"/>
-	<acme:form-textbox code="authenticated.offer.form.label.minReward" path="minReward"/>
-	<acme:form-textbox code="authenticated.offer.form.label.maxReward" path="maxReward"/>
-	<acme:form-textbox code="authenticated.offer.form.label.ticker" path="ticker"/>
+	<acme:form-textbox code="authenticated.challenge.form.label.title" path="title"/>
+	<acme:form-moment code="authenticated.challenge.form.label.deadline" path="deadline"/>
+	<acme:form-textarea code="authenticated.challenge.form.label.description" path="description"/>
+	<acme:form-textbox code="authenticated.challenge.form.label.goal" path="goal"/>
+	<acme:form-textbox code="authenticated.challenge.form.label.reward" path="reward"/>
+	<acme:form-textbox code="authenticated.challenge.form.label.level" path="level"/>
 	
-	<acme:form-return code="authenticated.offer.form.button.return"/>
+	<acme:form-return code="authenticated.challenge.form.button.return"/>
 </acme:form>

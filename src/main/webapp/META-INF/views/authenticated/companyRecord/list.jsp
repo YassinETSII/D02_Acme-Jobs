@@ -16,6 +16,6 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.request.list.label.moment" path="moment" width="20%"/>
-	<acme:list-column code="authenticated.request.list.label.title" path="title" width="20%"/>
+	<acme:list-column code="authenticated.companyRecord.list.label.company" path="company" width="20%"/>
+	<acme:list-column code="authenticated.companyRecord.list.label.sector" path="sector" width="20%"/>
 </acme:list>

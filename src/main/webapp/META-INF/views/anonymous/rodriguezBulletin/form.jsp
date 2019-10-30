@@ -21,7 +21,7 @@
 
 <acme:form>
 	<acme:form-textbox code="anonymous.rodriguezBulletin.form.label.informer" path="informer"/>
-	<acme:form-textarea code="anonymous.rodriguezBulletin.form.label.type" path="type"/>
+	<acme:form-textbox code="anonymous.rodriguezBulletin.form.label.type" path="type"/>
 	
 	<acme:form-submit code="anonymous.rodriguezBulletin.form.button.create" action="/anonymous/rodriguez-bulletin/create"/>
 	<acme:form-return code="anonymous.rodriguezBulletin.form.button.return"/>

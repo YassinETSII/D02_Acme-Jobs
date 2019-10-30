@@ -31,8 +31,11 @@ master.menu.sign-out = Salir
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.announcement.list = Listar anuncios
+master.menu.authenticated.companyRecord.list = Listar registros de compañías
+master.menu.authenticated.investorRecord.list = Listar registros de inversores
 master.menu.authenticated.request.list = Listar solicitudes
 master.menu.authenticated.offer.list = Listar ofertas
+master.menu.authenticated.challenge.list = Listar retos
 
 # master.menu.anonymous #######################################################
 
@@ -53,6 +56,7 @@ master.menu.anonymous.investorRecord.list = Listar registros de inversores
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.announcement.list = Listar anuncios
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################
