@@ -17,5 +17,5 @@
 
 <acme:list>
 	<acme:list-column code="authenticated.companyRecord.list.label.company" path="company" width="20%"/>
-	<acme:list-column code="authenticated.companyRecord.list.label.sector" path="sector" width="40%"/>
+	<acme:list-column code="authenticated.companyRecord.list.label.sector" path="sector" width="20%"/>
 </acme:list>

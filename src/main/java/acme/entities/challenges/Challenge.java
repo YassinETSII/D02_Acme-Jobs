@@ -10,6 +10,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -39,25 +40,15 @@ public class Challenge extends DomainEntity {
 	private String				description;
 
 	@NotBlank
-	private String				goldLevelGoal;
+	private String				goal;
+
+	@NotNull
+	@Valid
+	private Money				reward;
 
 	@NotBlank
-	private String				silverLevelGoal;
-
-	@NotBlank
-	private String				bronzeLevelGoal;
-
-	@NotNull
-	@Valid
-	private Money				goldLevelReward;
-
-	@NotNull
-	@Valid
-	private Money				silverLevelReward;
-
-	@NotNull
-	@Valid
-	private Money				bronzeLevelReward;
+	@Pattern(regexp = "^GOLD|SILVER|BRONZE$")
+	private String				level;
 
 	// Derived Attributes -------------------------------------------------------
 

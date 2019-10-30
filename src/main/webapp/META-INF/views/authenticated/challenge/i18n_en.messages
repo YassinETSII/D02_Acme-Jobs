@@ -12,12 +12,9 @@
 authenticated.challenge.form.label.title = Title:
 authenticated.challenge.form.label.deadline = Deadline:
 authenticated.challenge.form.label.description = Description:
-authenticated.challenge.form.label.goldLevelGoal = Gold level goal:
-authenticated.challenge.form.label.goldLevelReward: Gold level Reward:
-authenticated.challenge.form.label.silverLevelGoal: Silver level goal:
-authenticated.challenge.form.label.silverLevelReward: Silver level reward:
-authenticated.challenge.form.label.bronzeLevelGoal: Bronze level goal:
-authenticated.challenge.form.label.bronzeLevelReward: Bronze level reward:
+authenticated.challenge.form.label.goal = Goal:
+authenticated.challenge.form.label.reward: Reward:
+authenticated.challenge.form.label.level: Level:
 
 authenticated.challenge.form.button.return = Return
 

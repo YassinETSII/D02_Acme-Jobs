@@ -56,6 +56,7 @@ master.menu.anonymous.investorRecord.list = List investor records
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.announcement.list = List announcements
 master.menu.administrator.shutdown = Shut down
 
 # master.menu.provider ########################################################
