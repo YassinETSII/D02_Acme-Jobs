@@ -31,6 +31,8 @@ master.menu.sign-out = Salir
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.announcement.list = Listar anuncios
+master.menu.authenticated.companyRecord.list = Listar registros de compañías
+master.menu.authenticated.investorRecord.list = Listar registros de inversores
 master.menu.authenticated.request.list = Listar solicitudes
 master.menu.authenticated.offer.list = Listar ofertas
 master.menu.authenticated.challenge.list = Listar retos
