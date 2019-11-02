@@ -50,6 +50,7 @@ master.menu.anonymous.rodriguezbulletin.list = Listar Boletin de Rodriguez
 master.menu.anonymous.rodriguezbulletin.create = Crear Boletin de Rodriguez
 master.menu.anonymous.announcement.list = Listar anuncios
 master.menu.anonymous.companyRecord.list = Listar registros de compañías
+master.menu.anonymous.companyRecord.list = Listar mejores registros de compañías
 master.menu.anonymous.investorRecord.list = Listar registros de inversores
 
 # master.menu.administrator ###################################################
