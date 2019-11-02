@@ -294,4 +294,34 @@
 		<property name="level" value="GOLD"/>
 	</bean>
 	
+	<!-- Customisation -->
+	
+	<bean id="customisation" class="acme.entities.customisation.Customisation">
+		<property name="englishSpamWords">
+			<list>
+				<value>sex</value>
+				<value>hard core</value>
+				<value>viagra</value>
+				<value>cialis</value>
+				<value>nigeria</value>
+				<value>you've won</value>
+				<value>million dollar</value>
+			</list>
+		</property>
+		<property name="spanishSpamWords">
+			<list>
+				<value>sexo</value>
+				<value>hardcore</value>
+				<value>viagra</value>
+				<value>cialis</value>
+				<value>nigeria</value>
+				<value>has ganado</value>
+				<value>un millon de dolares</value>
+			</list>
+		</property>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	
+	
+	
 </beans>
