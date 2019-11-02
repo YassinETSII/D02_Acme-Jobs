@@ -20,7 +20,7 @@
 	<acme:form-moment code="authenticated.challenge.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="authenticated.challenge.form.label.description" path="description"/>
 	<acme:form-textbox code="authenticated.challenge.form.label.goal" path="goal"/>
-	<acme:form-textbox code="authenticated.challenge.form.label.reward" path="reward"/>
+	<acme:form-money code="authenticated.challenge.form.label.reward" path="reward"/>
 	<acme:form-textbox code="authenticated.challenge.form.label.level" path="level"/>
 	
 	<acme:form-return code="authenticated.challenge.form.button.return"/>
