@@ -15,6 +15,7 @@ authenticated.challenge.form.label.description = Descripción:
 authenticated.challenge.form.label.goal = Objetivo:
 authenticated.challenge.form.label.reward: Recompensa:
 authenticated.challenge.form.label.level: Nivel:
+authenticated.challenge.form.label.goalReward = Objetivo-Recompensa:
 
 authenticated.challenge.form.button.return = Volver
 

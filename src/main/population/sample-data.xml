@@ -322,6 +322,20 @@
 		<property name="spamThreshold" value="1.0"/>
 	</bean>
 	
+	<!-- Banner -->
+
+	<bean id="commercialBanner01" class="acme.entities.banners.CommercialBanner">
+		<property name="picture" value="https://www.tumblr.com/search/mosaic%20bikes"/>
+		<property name="slogan" value="We make the best bikes!"/>
+		<property name="URL" value="https://www.tumblr.com"/>
+		<property name="creditCard" value="4326305796474590"/>
+	</bean>	
 	
+	<bean id="nonCommercialBanner01" class="acme.entities.banners.NonCommercialBanner">
+		<property name="picture" value="https://www.tumblr.com/search/mosaic%20bikes"/>
+		<property name="slogan" value="We make the best bikes!"/>
+		<property name="URL" value="https://www.tumblr.com"/>
+		<property name="jingle" value="la lalala lololo we'are the best!"/>
+	</bean>	
 	
 </beans>
