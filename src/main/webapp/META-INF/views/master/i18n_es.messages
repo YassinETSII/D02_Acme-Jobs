@@ -60,6 +60,7 @@ master.menu.administrator = Administrador
 master.menu.administrator.customisation.list = Configuración
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.announcement.list = Listar anuncios
+master.menu.administrator.dashboard.form = Mostrar tablero
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################

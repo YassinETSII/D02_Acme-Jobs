@@ -57,6 +57,8 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.customisation.list" action="/administrator/customisation/list"/>				
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.dashboard.form" action="/administrator/dashboard/show"/>
+			<acme:menu-separator/>							
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
 
