@@ -9,6 +9,5 @@
 # they accept any liabilities with respect to them.
 
 ########################################### Feature: administrator displays the customisation parameters.
-administrator.customisation.list.label.englishSpamWords = English Spam Words
-administrator.customisation.list.label.spanishSpamWords = Spanish Spam Words
+administrator.customisation.list.label.spamWords = Spam Words
 administrator.customisation.list.label.spamThreshold = Spam Threshold (Percentage)

@@ -62,7 +62,6 @@
 	    data: {
 	        labels,
 	        datasets: [{
-	            label: 'Total number of companies grouped by sector',
 	            data,
 	            backgroundColor: [
 	                'rgba(255, 99, 132, 0.2)',
@@ -84,6 +83,7 @@
 	        }]
 	    },
 	    options: {
+	    	legend: {display:false},
 	        scales: {
 	            yAxes: [{
 	                ticks: {
@@ -126,7 +126,6 @@
 	    data: {
 	        labels,
 	        datasets: [{
-	            label: 'Total number of investors grouped by sector',
 	            data,
 	            backgroundColor: [
 	                'rgba(255, 99, 132, 0.2)',
@@ -148,6 +147,7 @@
 	        }]
 	    },
 	    options: {
+	    	legend: {display:false},
 	        scales: {
 	            yAxes: [{
 	                ticks: {
