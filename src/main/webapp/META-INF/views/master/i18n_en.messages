@@ -61,6 +61,7 @@ master.menu.administrator.customisation.list = Customisation
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.announcement.list = List announcements
 master.menu.administrator.dashboard.form = Display dashboard
+master.menu.administrator.chart.form = Display charts
 master.menu.administrator.shutdown = Shut down
 
 # master.menu.provider ########################################################
