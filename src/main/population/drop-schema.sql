@@ -15,14 +15,6 @@
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
 
-    alter table `customisation_english_spam_words` 
-       drop 
-       foreign key `FKab7mf88ayiccqqo42vmymspkl`;
-
-    alter table `customisation_spanish_spam_words` 
-       drop 
-       foreign key `FKnl9nwcshsjv0qsvntrnccp7cs`;
-
     alter table `provider` 
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
@@ -46,10 +38,6 @@
     drop table if exists `consumer`;
 
     drop table if exists `customisation`;
-
-    drop table if exists `customisation_english_spam_words`;
-
-    drop table if exists `customisation_spanish_spam_words`;
 
     drop table if exists `investor_record`;
 

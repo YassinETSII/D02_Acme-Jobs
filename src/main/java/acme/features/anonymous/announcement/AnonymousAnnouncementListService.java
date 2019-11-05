@@ -1,7 +1,10 @@
 
 package acme.features.anonymous.announcement;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
+import java.util.TimeZone;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,8 +46,12 @@ public class AnonymousAnnouncementListService implements AbstractListService<Ano
 	public Collection<Announcement> findMany(final Request<Announcement> request) {
 		assert request != null;
 
+		Calendar c = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
+		c.add(Calendar.MONTH, -1);
+		Date d = c.getTime();
+
 		Collection<Announcement> result;
-		result = this.repository.findManyAll();
+		result = this.repository.findManyAll(d);
 
 		return result;
 

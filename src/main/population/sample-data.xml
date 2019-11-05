@@ -142,6 +142,27 @@
 		<property name="text" value="We need a bartender for our new Bar, the Bar Amaro."/>
 	</bean>
 	
+	<bean id="announcement06" class="acme.entities.announcements.Announcement">
+		<property name="title" value="TensorFlow analyst"/>
+		<property name="moment" value="2019/10/04 19:30"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a tensorflow analyst for our new startup."/>
+	</bean>
+	
+	<bean id="announcement07" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Chofer"/>
+		<property name="moment" value="2019/10/05 18:21"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a chofer for the new CEO of the company."/>
+	</bean>
+	
+	<bean id="announcement08" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Coacher"/>
+		<property name="moment" value="2019/10/06 18:15"/>
+		<property name="moreInfo" value="https://www.infojobs.net/"/>
+		<property name="text" value="We need a coach for motivate our testing team."/>
+	</bean>
+	
 	<!--  Requests -->
 	
 	<bean id="request01" class="acme.entities.requests.Request">
@@ -242,7 +263,7 @@
 	</bean>
 	
 	<bean id="companyRecord04" class="acme.entities.companyRecords.CompanyRecord">
-		<property name="company" value="Picordi, Inc."/>
+		<property name="company" value="Picordi"/>
 		<property name="sector" value="Web"/>
 		<property name="CEO" value="Marta Pedrera"/>
 		<property name="description" value="Record in digital marketing"/>
@@ -254,7 +275,7 @@
 	</bean>
 	
 	<bean id="companyRecord05" class="acme.entities.companyRecords.CompanyRecord">
-		<property name="company" value="Acmonson, Inc."/>
+		<property name="company" value="Acmonson"/>
 		<property name="sector" value="Audit"/>
 		<property name="CEO" value="Paco Valdemoro"/>
 		<property name="description" value="Record in security"/>
@@ -329,9 +350,12 @@
 		<property name="title" value="Capture the flag"/>
 		<property name="deadline" value="2020/06/20 12:00"/>
 		<property name="description" value="Capture the Flag (CTF) is a special kind of information security competitions."/>
-		<property name="goal" value="Capture the flag in 10 minutes"/>
-		<property name="reward" value="250.0 EUR"/>
-		<property name="level" value="BRONZE"/>		
+		<property name="goldGoal" value="Capture the flag in 10 minutes"/>
+		<property name="silverGoal" value="Capture the flag in 20 minutes"/>
+		<property name="bronzeGoal" value="Capture the flag in 30 minutes"/>
+		<property name="goldReward" value="250.0 EUR"/>
+		<property name="silverReward" value="150.0 EUR"/>
+		<property name="bronzeReward" value="50.0 EUR"/>
 		
 	</bean>
 	
@@ -339,45 +363,30 @@
 		<property name="title" value="Big data analytics"/>
 		<property name="deadline" value="2020/06/11 22:30"/>
 		<property name="description" value="To provide the best value to the organization."/>
-		<property name="goal" value="Provide the best value, detect issues and improve the system"/>
-		<property name="reward" value="1250.0 EUR"/>		
-		<property name="level" value="SILVER"/>						
+		<property name="goldGoal" value="Provide the best value, detect issues and improve the system"/>
+		<property name="silverGoal" value="Provide the best value and detect issues"/>
+		<property name="bronzeGoal" value="Provide the best value"/>
+		<property name="goldReward" value="1250.0 EUR"/>
+		<property name="silverReward" value="1150.0 EUR"/>
+		<property name="bronzeReward" value="650.0 EUR"/>					
 	</bean>
 	
 	<bean id="challenge03" class="acme.entities.challenges.Challenge">
 		<property name="title" value="Automatic translation with machine learning"/>
 		<property name="deadline" value="2020/05/21 11:45"/>
 		<property name="description" value="To produce a efficient machine learning translator."/>
-		<property name="goal" value="Produce a machine learning translator with 90% of accuracy"/>
-		<property name="reward" value="3000.0 EUR"/>
-		<property name="level" value="GOLD"/>
+		<property name="goldGoal" value="Produce a machine learning translator with 90% of accuracy"/>
+		<property name="silverGoal" value="Produce a machine learning translator with 80% of accuracy"/>
+		<property name="bronzeGoal" value="Produce a machine learning translator with 50% of accuracy"/>
+		<property name="goldReward" value="4000.0 EUR"/>
+		<property name="silverReward" value="1800.0 EUR"/>
+		<property name="bronzeReward" value="200.0 EUR"/>
 	</bean>
 	
 	<!-- Customisation -->
 	
 	<bean id="customisation" class="acme.entities.customisation.Customisation">
-		<property name="englishSpamWords">
-			<list>
-				<value>sex</value>
-				<value>hard core</value>
-				<value>viagra</value>
-				<value>cialis</value>
-				<value>nigeria</value>
-				<value>you've won</value>
-				<value>million dollar</value>
-			</list>
-		</property>
-		<property name="spanishSpamWords">
-			<list>
-				<value>sexo</value>
-				<value>hardcore</value>
-				<value>viagra</value>
-				<value>cialis</value>
-				<value>nigeria</value>
-				<value>has ganado</value>
-				<value>un millon de dolares</value>
-			</list>
-		</property>
+		<property name="spamWords" value="sex, hard core, viagra, cialis, nigeria, you've won, million dollar, sexo, hardcore, has ganado, un millon de dolares"></property>
 		<property name="spamThreshold" value="1.0"/>
 	</bean>
 	

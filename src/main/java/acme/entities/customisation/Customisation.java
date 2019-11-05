@@ -1,13 +1,10 @@
 
 package acme.entities.customisation;
 
-import java.util.Set;
-
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import acme.framework.entities.DomainEntity;
@@ -25,11 +22,8 @@ public class Customisation extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
 
-	@ElementCollection(fetch = FetchType.EAGER)
-	private Set<String>			englishSpamWords;
-
-	@ElementCollection(fetch = FetchType.EAGER)
-	private Set<String>			spanishSpamWords;
+	@NotBlank
+	private String				spamWords;
 
 	@NotNull
 	@Min(0)

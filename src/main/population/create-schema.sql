@@ -42,12 +42,17 @@
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
+        `bronze_goal` varchar(255),
+        `bronze_reward_amount` double precision,
+        `bronze_reward_currency` varchar(255),
         `deadline` datetime(6),
         `description` varchar(255),
-        `goal` varchar(255),
-        `level` varchar(255),
-        `reward_amount` double precision,
-        `reward_currency` varchar(255),
+        `gold_goal` varchar(255),
+        `gold_reward_amount` double precision,
+        `gold_reward_currency` varchar(255),
+        `silver_goal` varchar(255),
+        `silver_reward_amount` double precision,
+        `silver_reward_currency` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -90,17 +95,8 @@
        `id` integer not null,
         `version` integer not null,
         `spam_threshold` double precision,
+        `spam_words` varchar(255),
         primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `customisation_english_spam_words` (
-       `customisation_id` integer not null,
-        `english_spam_words` varchar(255)
-    ) engine=InnoDB;
-
-    create table `customisation_spanish_spam_words` (
-       `customisation_id` integer not null,
-        `spanish_spam_words` varchar(255)
     ) engine=InnoDB;
 
     create table `investor_record` (
@@ -234,16 +230,6 @@
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
-
-    alter table `customisation_english_spam_words` 
-       add constraint `FKab7mf88ayiccqqo42vmymspkl` 
-       foreign key (`customisation_id`) 
-       references `customisation` (`id`);
-
-    alter table `customisation_spanish_spam_words` 
-       add constraint `FKnl9nwcshsjv0qsvntrnccp7cs` 
-       foreign key (`customisation_id`) 
-       references `customisation` (`id`);
 
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 

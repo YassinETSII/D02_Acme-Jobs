@@ -9,6 +9,5 @@
 # they accept any liabilities with respect to them.
 
 ########################################### Feature: administrador muestra los parámetros de customización.
-administrator.customisation.list.label.englishSpamWords = Palabras Spam en inglés
-administrator.customisation.list.label.spanishSpamWords = Palabras Spam en castellano
+administrator.customisation.list.label.spamWords = Palabras Spam
 administrator.customisation.list.label.spamThreshold = Límite de spam (Porcentaje)
