@@ -66,7 +66,6 @@ CREATE TABLE `announcement` (
 
 LOCK TABLES `announcement` WRITE;
 /*!40000 ALTER TABLE `announcement` DISABLE KEYS */;
-INSERT INTO `announcement` VALUES (6,0,'2019-10-21 17:30:00.000000','https://www.infojobs.net/','We need a graphic designer for position as responsible for the visual image of the company.','Graphic designer'),(7,0,'2019-06-15 09:49:00.000000',NULL,'Stable position is offered. Hours Monday through Friday from 08:30 a.m. to 1:00 p.m. and from 4:00 p.m. to 7:00 p.m.','Truck tire repairer'),(8,0,'1997-04-20 16:59:00.000000','https://www.infojobs.net/','We need a Human Resources Technician with at least 2 years of experience for our team.','HR Technician'),(9,0,'2019-10-27 14:09:00.000000','https://www.infojobs.net/','We need a business intelligence analyst with at least 3 years of experience.','Business Intelligence analyst'),(10,0,'2019-09-25 16:52:00.000000','https://www.infojobs.net/','We need a bartender for our new Bar, the Bar Amaro.','Bartender');
 /*!40000 ALTER TABLE `announcement` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -160,12 +159,17 @@ DROP TABLE IF EXISTS `challenge`;
 CREATE TABLE `challenge` (
   `id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
+  `bronze_goal` varchar(255) DEFAULT NULL,
+  `bronze_reward_amount` double DEFAULT NULL,
+  `bronze_reward_currency` varchar(255) DEFAULT NULL,
   `deadline` datetime(6) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
-  `goal` varchar(255) DEFAULT NULL,
-  `level` varchar(255) DEFAULT NULL,
-  `reward_amount` double DEFAULT NULL,
-  `reward_currency` varchar(255) DEFAULT NULL,
+  `gold_goal` varchar(255) DEFAULT NULL,
+  `gold_reward_amount` double DEFAULT NULL,
+  `gold_reward_currency` varchar(255) DEFAULT NULL,
+  `silver_goal` varchar(255) DEFAULT NULL,
+  `silver_reward_amount` double DEFAULT NULL,
+  `silver_reward_currency` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -177,7 +181,6 @@ CREATE TABLE `challenge` (
 
 LOCK TABLES `challenge` WRITE;
 /*!40000 ALTER TABLE `challenge` DISABLE KEYS */;
-INSERT INTO `challenge` VALUES (30,0,'2020-06-20 10:00:00.000000','Capture the Flag (CTF) is a special kind of information security competitions.','Capture the flag in 10 minutes','BRONZE',250,'EUR','Capture the flag'),(31,0,'2020-06-11 20:30:00.000000','To provide the best value to the organization.','Provide the best value, detect issues and improve the system','SILVER',1250,'EUR','Big data analytics'),(32,0,'2020-05-21 09:45:00.000000','To produce a efficient machine learning translator.','Produce a machine learning translator with 90% of accuracy','GOLD',3000,'EUR','Automatic translation with machine learning');
 /*!40000 ALTER TABLE `challenge` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -205,7 +208,6 @@ CREATE TABLE `commercial_banner` (
 
 LOCK TABLES `commercial_banner` WRITE;
 /*!40000 ALTER TABLE `commercial_banner` DISABLE KEYS */;
-INSERT INTO `commercial_banner` VALUES (34,0,'https://www.tumblr.com','https://www.tumblr.com/search/mosaic%20bikes','We make the best bikes!','4326305796474590');
 /*!40000 ALTER TABLE `commercial_banner` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -228,7 +230,8 @@ CREATE TABLE `company_record` (
   `sector` varchar(255) DEFAULT NULL,
   `stars` int(11) DEFAULT NULL,
   `web` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UK_ssc7d0vl7xqysfq2gp9hryv61` (`phone`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -238,7 +241,6 @@ CREATE TABLE `company_record` (
 
 LOCK TABLES `company_record` WRITE;
 /*!40000 ALTER TABLE `company_record` DISABLE KEYS */;
-INSERT INTO `company_record` VALUES (17,0,'José García','Apricot, Inc.','Record in audit','apricot@mail.com',_binary '','+123 (23) 637238','Audit',4,'http://www.Apricot.com'),(18,0,'Alexander Guy','Olive, LLC','Record in comp fix','olive@mail.com',_binary '\0','1827574','Computer Fixing',3,'http://www.Olive.com'),(19,0,'Arnold González','Softsci, Inc.','Record in web','softsci@mail.com',_binary '','+9 1234962549','Web',5,'http://www.Softsci.com'),(20,0,'Marta Pedrera','Picordi, Inc.','Record in digital marketing','picordi@mail.com',_binary '','+921 (4949) 1234962549','Web',4,'http://www.Picordi.com'),(21,0,'Paco Valdemoro','Acmonson, Inc.','Record in security','acmonson@mail.com',_binary '','+921 (4949) 1234962549','Audit',5,'http://www.Acmonson.com');
 /*!40000 ALTER TABLE `company_record` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -281,6 +283,7 @@ CREATE TABLE `customisation` (
   `id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
   `spam_threshold` double DEFAULT NULL,
+  `spam_words` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -291,7 +294,6 @@ CREATE TABLE `customisation` (
 
 LOCK TABLES `customisation` WRITE;
 /*!40000 ALTER TABLE `customisation` DISABLE KEYS */;
-INSERT INTO `customisation` VALUES (33,0,1);
 /*!40000 ALTER TABLE `customisation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -363,7 +365,7 @@ CREATE TABLE `hibernate_sequence` (
 
 LOCK TABLES `hibernate_sequence` WRITE;
 /*!40000 ALTER TABLE `hibernate_sequence` DISABLE KEYS */;
-INSERT INTO `hibernate_sequence` VALUES (36);
+INSERT INTO `hibernate_sequence` VALUES (6);
 /*!40000 ALTER TABLE `hibernate_sequence` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -391,7 +393,6 @@ CREATE TABLE `investor_record` (
 
 LOCK TABLES `investor_record` WRITE;
 /*!40000 ALTER TABLE `investor_record` DISABLE KEYS */;
-INSERT INTO `investor_record` VALUES (22,0,'Paco Fernández','Web',5,'Statement for web record'),(23,0,'Joseph Joestar','Audit',4,'Statement for audit record'),(24,0,'Robert Speedwagon','Apps',5,'Statement for apps record'),(25,0,'Daniela Johnson','Apps',5,'Statement for apps record'),(26,0,'Pedro Seco','Apps',2,'Statement for apps record'),(27,0,'Marcos Rodríguez','Audit',4,'Statement for audit record'),(28,0,'Juan Juanez','Web',5,'Statement for web record'),(29,0,'Pablo Caballero','Marketing',5,'Statement for marketing record');
 /*!40000 ALTER TABLE `investor_record` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -446,7 +447,6 @@ CREATE TABLE `non_commercial_banner` (
 
 LOCK TABLES `non_commercial_banner` WRITE;
 /*!40000 ALTER TABLE `non_commercial_banner` DISABLE KEYS */;
-INSERT INTO `non_commercial_banner` VALUES (35,0,'https://www.tumblr.com','https://www.tumblr.com/search/mosaic%20bikes','We make the best bikes!','la lalala lololo we\'are the best!');
 /*!40000 ALTER TABLE `non_commercial_banner` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -480,7 +480,6 @@ CREATE TABLE `offer` (
 
 LOCK TABLES `offer` WRITE;
 /*!40000 ALTER TABLE `offer` DISABLE KEYS */;
-INSERT INTO `offer` VALUES (14,0,'2020-10-25 21:00:00.000000',1600,'EUR',900,'EUR','2019-09-25 16:52:00.000000','This is the offer for the job.','OXJAB-45312','Offer for the vacant of java programmer'),(15,0,'2020-01-12 11:00:00.000000',1800,'EUR',1400,'EUR','2019-03-02 12:15:00.000000','This is the offer for the job.','OfJAa-45313','Offer for the vacant of python analyst'),(16,0,'2020-10-25 21:00:00.000000',1500,'EUR',500,'EUR','2019-09-25 16:52:00.000000','This is the offer for the job.','OCgAn-65572','Offer for the vacant of business intelligence analyst');
 /*!40000 ALTER TABLE `offer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -540,7 +539,6 @@ CREATE TABLE `request` (
 
 LOCK TABLES `request` WRITE;
 /*!40000 ALTER TABLE `request` DISABLE KEYS */;
-INSERT INTO `request` VALUES (11,0,'2020-10-25 21:00:00.000000','2019-09-25 16:52:00.000000',2400,'EUR','Hi, this is my request for the job.','RXJAB-45312','Request for the vacant of java programmer'),(12,0,'2020-01-12 11:00:00.000000','2019-03-02 12:15:00.000000',2000,'EUR','Hi there, this is my request for the job.','RfJAa-45313','Request for the vacant of python analyst'),(13,0,'2020-10-25 21:00:00.000000','2019-09-25 16:52:00.000000',1000,'EUR','Hi, this is my request.','RCgAn-65572','Request for the vacant of business intelligence analyst');
 /*!40000 ALTER TABLE `request` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -623,7 +621,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$6/WZ/Sls4F8irfoXs.y4iOXpK8DHUP27wKL5AMbLYeHn4iF4NyGTe','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$zE6IPX0qV.1YDdWyXAPtU.UIK8Mn.w4gwcgQwhlqlXQnFclcIUKJW','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$QegQwOL7qii2eSFFeJWlIuk2jGiVwUnsYj85RNSyk8/yQqJWsJSIy','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$pxIv.ruVeWYUwK.WPGGZfevxtQpXPwmFVdaIZQyXjsuDGKPqx1dF2','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -636,4 +634,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-05  2:00:57
+-- Dump completed on 2019-11-05 18:45:10
